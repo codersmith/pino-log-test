@@ -32,7 +32,7 @@ Description=Log Buffer Test
 After=network.target auditd.service
 Wants=network.target
 [Service]
-WorkingDirectory=/home/ubuntu/log-test
+WorkingDirectory=/home/ubuntu/pino-log-test
 ExecStart=/home/ubuntu/.nvm/versions/node/v16.15.1/bin/node index.js
 User=ubuntu
 Group=ubuntu
