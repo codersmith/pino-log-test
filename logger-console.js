@@ -4,7 +4,7 @@ const logger = {
   info: (msg) => {
     const obj = {
       level: 30,
-      isoTime: (new Date()).toISOString(),
+      time: (new Date()).toISOString(),
       pid: process.pid,
       hostname: os.hostname(),
       logger: 'console.log',
