@@ -6,7 +6,6 @@ const logger = {
       level: 30,
       time: (new Date()).toISOString(),
       pid: process.pid,
-      hostname: os.hostname(),
       logger: 'console.log',
       msg,
     }
