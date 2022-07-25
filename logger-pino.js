@@ -7,7 +7,7 @@ const _l = pino({
       return { pid: bindings.pid }
     },
   },
-}, process.stdout)
+}, pino.destination({ sync: true }))
 
 const logger = _l.child({ logger: 'pino' })
 
